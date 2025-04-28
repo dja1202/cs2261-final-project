@@ -19,10 +19,3 @@ The player finds all the pets
 
 ### Lose case:
 The player dies before he/she find all the pets (3 lives)
-
-
-
-### do have some game-breaking bugs..  (will ask in office hours next week)
-- still need help with the collision map :/
-- Palette for map tiles needs correction
-- Art and design still in progress.
