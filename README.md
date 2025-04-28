@@ -5,14 +5,24 @@
 
 ### Game Mechanics:
 - Left and Right arrows: Moves the players
-- A Button: Jump/Double Jump
+- A Button: Jump/Double Jump (cheat)
 - B Button: Instructions
 - Start: Starts the game
 - Select: Pause
+
+### Audios:
+- start and game state has looping sounds
+- win state has no looping sound
 
 ### Win case: 
 The player finds all the pets
 
 ### Lose case:
-The player dies before he/she find all the pets
+The player dies before he/she find all the pets (3 lives)
 
+
+
+### do have some game-breaking bugs..  (will ask in office hours next week)
+- still need help with the collision map :/
+- Palette for map tiles needs correction
+- Art and design still in progress.
