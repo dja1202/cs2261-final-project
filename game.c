@@ -124,23 +124,33 @@ void updatePlayer() {
             direction = -1;
         }
 
-        for (int i = 0; i < steps; i++) {
-            int nextY = player.y + direction;
-            int nextBottomY = nextY + player.height - 1;
+    for (int i = 0; i < steps; i++) {
+        int nextY = player.y + direction;
+        int nextBottomY = nextY + player.height - 1;
 
-            if (!goThrough(leftX, nextBottomY, level) || !goThrough(rightX, nextBottomY, level)) {
-                player.dy = 0;
+        if (!goThrough(leftX, nextBottomY, level) || !goThrough(rightX, nextBottomY, level)) {
+            player.dy = 0;
 
-                if (direction > 0) {
-                    player.grounded = 1;
-                    player.jumpCount = 0;
+            if (direction > 0) {
+                player.grounded = 1;
+                player.jumpCount = 0;
+            }
+
+            break;
+        } else {
+            player.y = nextY;
+            if (checkCollisionLose(player.x, player.y)) {
+                lives--;
+                if (lives <= 0) {
+                    goToLose();
+                } else {
+                    initializePlayer();
                 }
-
-                break;
-            } else {
-                player.y = nextY;
+                return;
             }
         }
+    }
+
     }
 
     // Animation frame update
@@ -201,25 +211,6 @@ void drawPlayer() {
         }
     }
 }
-
-// void drawPlayer() {
-//     shadowOAM[player.oamIndex].attr0 = ATTR0_Y(player.y - vOff) | ATTR0_REGULAR | ATTR0_SQUARE;
-//     shadowOAM[player.oamIndex].attr1 = ATTR1_X(player.x - hOff) | ATTR1_MEDIUM;
-
-//     if (lives == 1) {
-//         shadowOAM[player.oamIndex].attr2 = ATTR2_TILEID(player.currentFrame * 4, player.direction * 4) | ATTR2_PALROW(1);
-//     } else {
-//         shadowOAM[player.oamIndex].attr2 = ATTR2_TILEID(player.currentFrame * 4, player.direction * 4) | ATTR2_PALROW(0);
-//         // Modify palette colors depending on lives
-//         if (lives == 3){
-//             SPRITE_PAL[1] = RGB(10, 5, 0); 
-//             SPRITE_PAL[5] = RGB(14, 8, 6);
-//         } else if (lives == 2) {
-//             SPRITE_PAL[1] = RGB(14, 0, 0); 
-//             SPRITE_PAL[5] = RGB(17, 6, 4);
-//         }
-//     }
-// }
 
 void initializePet1() {
     pet1.x = 480;
@@ -327,16 +318,4 @@ int winCondition() {
         return 1;
     }
     return 0;
-}
-
-
-int loseCondition() {
-    if (checkCollisionLose(player.x, player.y)) {
-        lives--;
-        if (lives <= 0) {
-            goToLose();
-        } else {
-            initializePlayer();
-        }
-    }
 }
