@@ -1,21 +1,39 @@
-# Bright Cookie's Quest: Pet Rescue
+# 🌟 Bright Cookie's Quest: Pet Rescue 🍪🐾
 
-## Storyline
-- The game follows a story-driven structure, beginning with a brief narration before transitioning into a platformer experience. The adventure starts in Cookie Village, where the bright cookie (the player) learns that their friends' pets have gone missing after a playful outing in the forest. Determined to help, she embarks on a quest to find the lost pets. Throughout the journey, she must navigate through three uniquely themed areas, overcoming various obstacles along the way.
+## 🎮 Gameplay Overview  
+Bright Cookie's Quest: Pet Rescue is a platformer game where you must travel through three forest areas (three levels) to rescue the missing pets! 
 
-### Game Mechanics:
-- Left and Right arrows: Moves the players
-- A Button: Jump/Double Jump (cheat)
-- B Button: Instructions
-- Start: Starts the game
-- Select: Pause
+---
 
-### Audios:
-- start and game state has looping sounds
-- win state has no looping sound
+## 🕹️ Controls  
+- **← / → Arrow Keys** – Move the player  
+- **A Button** – Jump / Double Jump  
+- **B Button** – View Instructions  
+- **Start** – Start / Pause the game  
+- **Select** – Restart the game  
 
-### Win case: 
-The player finds all the pets
+---
 
-### Lose case:
-The player dies before he/she find all the pets (3 lives)
+## 🔊 Audio  
+- 🎵 **Start & Gameplay**: Looping background music  
+- 🎵 **Win State**: Single-play victory music  
+
+---
+
+## ✅ Win Condition  
+Rescue **all the pets** to complete your mission!
+
+---
+
+## ❌ Lose Condition  
+You have **3 lives**.  
+- Touching **water** costs 1 life  
+- Lose all 3 lives = game over
+
+---
+
+## 🧪 Cheat Code: Jetpack Fly Mode  
+Hold **L + R** buttons to activate continuous **fly mode**.  
+Use the **D-pad** to move while flying.
+
+---
