@@ -1,7 +1,7 @@
-# 🌟 Bright Cookie's Quest: Pet Rescue 🍪🐾
+# 🌟 Bright Cookie's Quest 🌟
 
 ## 🎮 Gameplay Overview  
-Bright Cookie's Quest: Pet Rescue is a platformer game where you must travel through three forest areas (three levels) to rescue the missing pets! 
+Bright Cookie's Quest is a platformer game where you must travel through three forest areas (three levels) to rescue the missing pets! 
 
 ---
 
