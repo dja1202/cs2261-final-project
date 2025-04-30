@@ -146,14 +146,14 @@ checkCollisionLose:
 	.type	checkCollisionPetSprite, %function
 checkCollisionPetSprite:
 	@ Function supports interworking.
-	@ args = 136, pretend = 16, frame = 0
+	@ args = 144, pretend = 16, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
 	@ link register save eliminated.
 	sub	sp, sp, #16
 	sub	ip, sp, #4
 	stmib	ip, {r0, r1, r2, r3}
-	ldr	r1, [sp, #68]
-	ldr	r3, [sp, #84]
+	ldr	r1, [sp, #72]
+	ldr	r3, [sp, #88]
 	ldr	r2, [sp]
 	add	r3, r1, r3
 	cmp	r3, r2
@@ -167,8 +167,8 @@ checkCollisionPetSprite:
 	add	sp, sp, #16
 	bx	lr
 .L33:
-	ldr	r1, [sp, #72]
-	ldr	r2, [sp, #88]
+	ldr	r1, [sp, #76]
+	ldr	r2, [sp, #92]
 	ldr	r3, [sp, #4]
 	add	r2, r1, r2
 	cmp	r2, r3

@@ -338,13 +338,13 @@ extern const unsigned short spritesheetPal[256];
 # 8 "main.c" 2
 # 1 "map1.h" 1
 # 22 "map1.h"
-extern const unsigned short map1Tiles[112];
+extern const unsigned short map1Tiles[144];
 
 
 extern const unsigned short map1Map[2048];
 
 
-extern const unsigned short map1Pal[256];
+extern const unsigned short map1Pal[16];
 # 9 "main.c" 2
 # 1 "map2.h" 1
 # 22 "map2.h"
@@ -368,7 +368,7 @@ extern const unsigned short map3Pal[256];
 # 11 "main.c" 2
 # 1 "background1.h" 1
 # 22 "background1.h"
-extern const unsigned short background1Tiles[13664];
+extern const unsigned short background1Tiles[12336];
 
 
 extern const unsigned short background1Map[2048];
@@ -378,7 +378,7 @@ extern const unsigned short background1Pal[256];
 # 12 "main.c" 2
 # 1 "background2.h" 1
 # 22 "background2.h"
-extern const unsigned short background2Tiles[13616];
+extern const unsigned short background2Tiles[12416];
 
 
 extern const unsigned short background2Map[2048];
@@ -388,7 +388,7 @@ extern const unsigned short background2Pal[256];
 # 13 "main.c" 2
 # 1 "background3.h" 1
 # 22 "background3.h"
-extern const unsigned short background3Tiles[13616];
+extern const unsigned short background3Tiles[12464];
 
 
 extern const unsigned short background3Map[2048];
@@ -608,7 +608,6 @@ void goToStart() {
     lives = 3;
     level = 1;
     paused = 0;
-
     playSoundA(startMusic_data, startMusic_length, 1);
     state = START;
 }
@@ -657,19 +656,17 @@ void goToGame1() {
     (*(volatile unsigned short *)0x4000000) = (1 << (8 + (0 % 4))) | (1 << (8 + (1 % 4))) | (1 << 12);
 
     DMANow(3, background1Pal, ((unsigned short *)0x5000000), 256);
-    DMANow(3, background1Tiles, &((CB*) 0x6000000)[0], 27328 / 2);
+    DMANow(3, background1Tiles, &((CB*) 0x6000000)[0], 24672 / 2);
     DMANow(3, background1Map, &((SB*) 0x6000000)[28], 4096 / 2);
 
 
-    DMANow(3, map1Tiles, &((CB*) 0x6000000)[1], 224 / 2);
+    DMANow(3, map1Tiles, &((CB*) 0x6000000)[1], 288 / 2);
     DMANow(3, map1Map, &((SB*) 0x6000000)[30], 4096 / 2);
 
     if (!paused) {
-        lives = 3;
         level = 1;
         initializePlayer();
         initializePet1();
-
         playSoundA(game1Music_data, game1Music_length, 1);
     }
 }
@@ -677,11 +674,11 @@ void goToGame1() {
 void game1() {
     updateGame1();
     drawGame1();
-    waitForVBlank();
-
 
     (*(volatile unsigned short*) 0x04000014) = hOff / 2;
     (*(volatile unsigned short*) 0x04000010) = hOff;
+
+    waitForVBlank();
 
     if ((!(~(oldButtons) & ((1<<3))) && (~(buttons) & ((1<<3))))) {
         goToPause();
@@ -699,19 +696,17 @@ void goToGame2() {
     (*(volatile unsigned short *)0x4000000) = (1 << (8 + (0 % 4))) | (1 << (8 + (1 % 4))) | (1 << 12);
 
     DMANow(3, background2Pal, ((unsigned short *)0x5000000), 256);
-    DMANow(3, background2Tiles, &((CB*) 0x6000000)[0], 27232 / 2);
+    DMANow(3, background2Tiles, &((CB*) 0x6000000)[0], 24832 / 2);
     DMANow(3, background2Map, &((SB*) 0x6000000)[28], 4096 / 2);
 
 
     DMANow(3, map2Tiles, &((CB*) 0x6000000)[1], 224 / 2);
     DMANow(3, map2Map, &((SB*) 0x6000000)[30], 4096 / 2);
 
-    if (paused == 0) {
-        lives = 3;
+    if (!paused) {
         level = 2;
         initializePlayer();
         initializePet2();
-
         playSoundA(game2Music_data, game2Music_length, 1);
     }
     state = GAME2;
@@ -720,10 +715,11 @@ void goToGame2() {
 void game2() {
     updateGame2();
     drawGame2();
-    waitForVBlank();
 
     (*(volatile unsigned short*) 0x04000014) = hOff / 2;
     (*(volatile unsigned short*) 0x04000010) = hOff;
+
+    waitForVBlank();
 
     if ((!(~(oldButtons) & ((1<<3))) && (~(buttons) & ((1<<3))))) {
         goToPause();
@@ -740,31 +736,30 @@ void goToGame3() {
     (*(volatile unsigned short *)0x4000000) = (1 << (8 + (0 % 4))) | (1 << (8 + (1 % 4))) | (1 << 12);
 
     DMANow(3, background3Pal, ((unsigned short *)0x5000000), 256);
-    DMANow(3, background3Tiles, &((CB*) 0x6000000)[0], 27232 / 2);
+    DMANow(3, background3Tiles, &((CB*) 0x6000000)[0], 24928 / 2);
     DMANow(3, background3Map, &((SB*) 0x6000000)[28], 4096 / 2);
 
 
     DMANow(3, map3Tiles, &((CB*) 0x6000000)[1], 352 / 2);
     DMANow(3, map3Map, &((SB*) 0x6000000)[30], 4096 / 2);
 
-    if (paused == 0) {
-        lives = 3;
+    if (!paused) {
         level = 3;
         initializePlayer();
         initializePet3();
-
         playSoundA(game3Music_data, game3Music_length, 1);
     }
     state = GAME3;
 }
 
 void game3() {
-    updateGame2();
+    updateGame3();
     drawGame3();
-    waitForVBlank();
 
     (*(volatile unsigned short*) 0x04000014) = hOff / 2;
     (*(volatile unsigned short*) 0x04000010) = hOff;
+
+    waitForVBlank();
 
     if ((!(~(oldButtons) & ((1<<3))) && (~(buttons) & ((1<<3))))) {
         goToPause();
@@ -785,6 +780,7 @@ void goToPause() {
     state = PAUSE;
     pauseSounds();
 }
+
 void pause() {
     paused = 1;
 
@@ -812,15 +808,13 @@ void pause() {
         paused = 0;
     } else if ((!(~(oldButtons) & ((1<<2))) && (~(buttons) & ((1<<2))))) {
         goToStart();
-    } else if ((!(~(oldButtons) & ((1<<1))) && (~(buttons) & ((1<<1))))) {
-        goToInstructions();
     }
 }
 
 
-
 void goToLose() {
     state = LOSE;
+    pauseSounds();
 }
 
 void lose() {
@@ -842,9 +836,9 @@ void lose() {
     }
 }
 
-
 void goToWin() {
     state = WIN;
+    playSoundA(winMusic_data, winMusic_length, 0);
 }
 
 void win() {
@@ -859,8 +853,6 @@ void win() {
 
     hideSprites();
     DMANow(3, shadowOAM, ((OBJ_ATTR*)(0x7000000)), 128 * 4);
-
-    playSoundA(winMusic_data, winMusic_length, 0);
 
     if ((!(~(oldButtons) & ((1<<2))) && (~(buttons) & ((1<<2))))) {
         goToStart();

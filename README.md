@@ -1,4 +1,4 @@
-# 🌟 Bright Cookie's Quest: Pet Rescue 🌟
+# 🌟 Bright Cookie's Quest: Pet Rescue 🍪🐾
 
 ## 🎮 Gameplay Overview  
 Bright Cookie's Quest: Pet Rescue is a platformer game where you must travel through three forest areas (three levels) to rescue the missing pets! 
@@ -37,3 +37,6 @@ Hold **L + R** buttons to activate continuous **fly mode**.
 Use the **D-pad** to move while flying.
 
 ---
+
+## ⚠️ Known Issues  
+> 🐛 *Some game-breaking bugs may occur — use cheats responsibly!*

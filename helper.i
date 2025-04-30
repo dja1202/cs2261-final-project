@@ -88,6 +88,7 @@ typedef struct {
   int grounded;
   int jumpCount;
   int maxJumps;
+  int cheatFlying;
   u8 oamIndex;
 } SPRITE;
 # 4 "helper.c" 2
@@ -345,7 +346,7 @@ extern const unsigned short collision1Pal[256];
 extern const unsigned short collision2Bitmap[65536];
 
 
-extern const unsigned short collision2Pal[256];
+extern const unsigned short collision2Pal[16];
 # 10 "helper.c" 2
 # 1 "collision3.h" 1
 # 21 "collision3.h"
@@ -356,13 +357,13 @@ extern const unsigned short collision3Pal[256];
 # 11 "helper.c" 2
 # 1 "map1.h" 1
 # 22 "map1.h"
-extern const unsigned short map1Tiles[112];
+extern const unsigned short map1Tiles[144];
 
 
 extern const unsigned short map1Map[2048];
 
 
-extern const unsigned short map1Pal[256];
+extern const unsigned short map1Pal[16];
 # 12 "helper.c" 2
 
 
@@ -430,7 +431,6 @@ void updateGame1() {
     updatePet1();
     winCondition();
     loseCondition();
-# 95 "helper.c"
 }
 
 void drawGame1() {
@@ -446,7 +446,6 @@ void updateGame2() {
     updatePet2();
     winCondition();
     loseCondition();
-# 124 "helper.c"
 }
 
 
@@ -463,7 +462,6 @@ void updateGame3() {
     updatePet3();
     winCondition();
     loseCondition();
-# 155 "helper.c"
 }
 
 void drawGame3() {

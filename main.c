@@ -122,7 +122,6 @@ void goToStart() {
     lives = 3;
     level = 1;
     paused = 0;
-    //loop sound
     playSoundA(startMusic_data, startMusic_length, 1);
     state = START;
 }
@@ -179,11 +178,9 @@ void goToGame1() {
     DMANow(3, map1Map, &SCREENBLOCK[30], map1MapLen / 2);
 
     if (!paused) {
-        lives = 3;
         level = 1;
         initializePlayer();
         initializePet1();
-        //loop sound
         playSoundA(game1Music_data, game1Music_length, 1);
     }
 }
@@ -191,11 +188,11 @@ void goToGame1() {
 void game1() {
     updateGame1();
     drawGame1();
-    waitForVBlank();
 
-    // Two backgrounds that move/scroll independently
     REG_BG1HOFF = hOff / 2; 
     REG_BG0HOFF = hOff;
+
+    waitForVBlank();
 
     if (BUTTON_PRESSED(BUTTON_START)) {
         goToPause();
@@ -220,12 +217,10 @@ void goToGame2() {
     DMANow(3, map2Tiles, &CHARBLOCK[1], map2TilesLen / 2);
     DMANow(3, map2Map, &SCREENBLOCK[30], map2MapLen / 2);
 
-    if (paused == 0) {
-        lives = 3;
+    if (!paused) {
         level = 2;
         initializePlayer();
         initializePet2();
-        //loop sound
         playSoundA(game2Music_data, game2Music_length, 1);
     }
     state = GAME2;
@@ -234,11 +229,12 @@ void goToGame2() {
 void game2() {
     updateGame2();
     drawGame2();
-    waitForVBlank();
 
     REG_BG1HOFF = hOff / 2; 
     REG_BG0HOFF = hOff;
 
+    waitForVBlank();
+    
     if (BUTTON_PRESSED(BUTTON_START)) {
         goToPause();
     }
@@ -261,24 +257,23 @@ void goToGame3() {
     DMANow(3, map3Tiles, &CHARBLOCK[1], map3TilesLen / 2);
     DMANow(3, map3Map, &SCREENBLOCK[30], map3MapLen / 2);
 
-    if (paused == 0) {
-        lives = 3;
+    if (!paused) {
         level = 3;
         initializePlayer();
         initializePet3();
-        //loop sound
         playSoundA(game3Music_data, game3Music_length, 1);
     }
     state = GAME3;
 }
 
 void game3() {
-    updateGame2();
+    updateGame3();
     drawGame3();
-    waitForVBlank();
 
     REG_BG1HOFF = hOff / 2; 
     REG_BG0HOFF = hOff;
+
+    waitForVBlank();
 
     if (BUTTON_PRESSED(BUTTON_START)) {
         goToPause();
@@ -299,6 +294,7 @@ void goToPause() {
     state = PAUSE;
     pauseSounds(); 
 }
+
 void pause() {
     paused = 1;
 
@@ -326,15 +322,13 @@ void pause() {
         paused = 0;
     } else if (BUTTON_PRESSED(BUTTON_SELECT)) {
         goToStart();
-    } else if (BUTTON_PRESSED(BUTTON_B)) {
-        goToInstructions();
     }
 }
 
 
-
 void goToLose() {
     state = LOSE;
+    pauseSounds();
 }
 
 void lose() {
@@ -356,9 +350,9 @@ void lose() {
     }
 }
 
-
 void goToWin() {
     state = WIN;
+    playSoundA(winMusic_data, winMusic_length, 0);
 }
 
 void win() {
@@ -370,12 +364,10 @@ void win() {
     DMANow(3, winPal, BG_PALETTE, 256);
     DMANow(3, winTiles, &CHARBLOCK[0], winTilesLen / 2);
     DMANow(3, winMap, &SCREENBLOCK[28], winMapLen / 2);
-    
+
     hideSprites();
     DMANow(3, shadowOAM, OAM, 128 * 4);
-    //non loop sound
-    playSoundA(winMusic_data, winMusic_length, 0);
-
+    
     if (BUTTON_PRESSED(BUTTON_SELECT)) {
         goToStart();
     }

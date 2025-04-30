@@ -16,7 +16,7 @@
 	.section	.rodata
 	.align	2
 	.type	map1Pal, %object
-	.size	map1Pal, 512
+	.size	map1Pal, 32
 map1Pal:
 	.short	0
 	.short	6578
@@ -25,246 +25,6 @@ map1Pal:
 	.short	16212
 	.short	20984
 	.short	5422
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
 	.short	0
 	.short	0
 	.short	0
@@ -897,14 +657,14 @@ map1Map:
 	.short	5
 	.short	5
 	.short	5
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
-	.short	0
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
+	.short	6
 	.short	5
 	.short	5
 	.short	5
@@ -916,7 +676,7 @@ map1Map:
 	.short	5
 	.short	5
 	.short	5
-	.short	0
+	.short	7
 	.short	0
 	.short	0
 	.short	0
@@ -1820,16 +1580,16 @@ map1Map:
 	.short	5
 	.short	5
 	.short	5
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
 	.short	5
 	.short	5
 	.short	5
@@ -1852,16 +1612,16 @@ map1Map:
 	.short	5
 	.short	5
 	.short	5
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
 	.short	5
 	.short	5
 	.short	5
@@ -1884,16 +1644,16 @@ map1Map:
 	.short	5
 	.short	5
 	.short	5
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
 	.short	5
 	.short	5
 	.short	5
@@ -1909,23 +1669,23 @@ map1Map:
 	.short	5
 	.short	5
 	.short	5
-	.short	0
-	.short	0
-	.short	0
+	.short	7
+	.short	7
+	.short	7
 	.short	5
 	.short	5
 	.short	5
 	.short	5
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
+	.short	8
 	.short	5
 	.short	5
 	.short	5
@@ -2326,7 +2086,7 @@ map1Map:
 	.short	0
 	.short	0
 	.type	map1Tiles, %object
-	.size	map1Tiles, 224
+	.size	map1Tiles, 288
 map1Tiles:
 	.short	0
 	.short	0
@@ -2424,6 +2184,38 @@ map1Tiles:
 	.short	8738
 	.short	8738
 	.short	8738
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	13107
+	.short	13107
 	.short	13107
 	.short	13107
 	.short	13107

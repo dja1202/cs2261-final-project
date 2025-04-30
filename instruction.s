@@ -35,12 +35,12 @@ instructionPal:
 	.short	0
 	.short	0
 	.short	0
-	.short	6578
-	.short	6445
-	.short	25264
-	.short	16212
-	.short	20984
-	.short	5422
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
 	.short	0
 	.short	0
 	.short	0
@@ -457,25 +457,23 @@ instructionMap:
 	.short	50
 	.short	51
 	.short	45
-	.short	49
 	.short	52
-	.short	1
-	.short	1066
 	.short	49
-	.short	1072
-	.short	1069
+	.short	1076
 	.short	43
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
 	.short	53
 	.short	54
-	.short	55
+	.short	1077
+	.short	1
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
 	.short	55
 	.short	56
+	.short	57
 	.short	57
 	.short	58
 	.short	59
@@ -489,56 +487,54 @@ instructionMap:
 	.short	67
 	.short	68
 	.short	69
-	.short	66
 	.short	70
-	.short	1
 	.short	71
-	.short	66
-	.short	1089
 	.short	72
-	.short	63
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
+	.short	66
 	.short	73
+	.short	65
 	.short	74
 	.short	75
 	.short	76
+	.short	1
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
 	.short	77
 	.short	78
 	.short	79
@@ -561,16 +557,16 @@ instructionMap:
 	.short	96
 	.short	97
 	.short	98
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
 	.short	99
 	.short	100
 	.short	101
 	.short	102
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
 	.short	103
 	.short	104
 	.short	105
@@ -583,28 +579,28 @@ instructionMap:
 	.short	112
 	.short	113
 	.short	114
-	.short	114
 	.short	115
 	.short	116
 	.short	117
+	.short	118
 	.short	118
 	.short	119
 	.short	120
 	.short	121
 	.short	122
-	.short	1137
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
-	.short	73
-	.short	74
 	.short	123
 	.short	124
 	.short	125
 	.short	126
+	.short	1141
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
+	.short	77
+	.short	78
 	.short	127
 	.short	128
 	.short	129
@@ -614,307 +610,311 @@ instructionMap:
 	.short	133
 	.short	134
 	.short	135
-	.short	2166
 	.short	136
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
-	.short	99
-	.short	100
 	.short	137
 	.short	138
-	.short	122
-	.short	108
 	.short	139
+	.short	2170
 	.short	140
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
+	.short	103
+	.short	104
 	.short	141
 	.short	142
+	.short	126
+	.short	112
 	.short	143
-	.short	118
 	.short	144
 	.short	145
 	.short	146
-	.short	118
 	.short	147
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
-	.short	73
-	.short	74
+	.short	122
 	.short	148
 	.short	149
 	.short	150
+	.short	122
 	.short	151
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
+	.short	77
+	.short	78
 	.short	152
 	.short	153
-	.short	80
 	.short	154
 	.short	155
-	.short	149
 	.short	156
 	.short	157
+	.short	84
 	.short	158
 	.short	159
-	.short	124
-	.short	155
-	.short	155
+	.short	153
 	.short	160
 	.short	161
-	.short	1111
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
-	.short	99
-	.short	100
 	.short	162
 	.short	163
+	.short	128
+	.short	159
+	.short	159
 	.short	164
 	.short	165
+	.short	1115
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
+	.short	103
+	.short	104
 	.short	166
 	.short	167
 	.short	168
 	.short	169
 	.short	170
-	.short	163
 	.short	171
 	.short	172
-	.short	113
-	.short	1188
-	.short	138
-	.short	170
-	.short	170
 	.short	173
 	.short	174
-	.short	1137
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
-	.short	73
-	.short	74
+	.short	167
 	.short	175
 	.short	176
+	.short	117
+	.short	1192
+	.short	142
+	.short	174
+	.short	174
 	.short	177
-	.short	91
 	.short	178
-	.short	1148
+	.short	1141
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
+	.short	77
+	.short	78
 	.short	179
 	.short	180
 	.short	181
+	.short	95
 	.short	182
-	.short	161
+	.short	1152
 	.short	183
-	.short	1
 	.short	184
-	.short	1148
-	.short	1115
-	.short	1115
-	.short	76
 	.short	185
 	.short	186
+	.short	165
 	.short	187
+	.short	1
 	.short	188
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
-	.short	99
-	.short	100
+	.short	1152
+	.short	1119
+	.short	1119
+	.short	80
 	.short	189
 	.short	190
 	.short	191
-	.short	116
 	.short	192
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
+	.short	103
+	.short	104
 	.short	193
 	.short	194
-	.short	172
-	.short	1140
 	.short	195
-	.short	174
+	.short	120
 	.short	196
-	.short	1
 	.short	197
-	.short	1162
-	.short	1140
-	.short	1140
-	.short	102
 	.short	198
-	.short	1142
+	.short	176
+	.short	1144
 	.short	199
+	.short	178
 	.short	200
 	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	0
-	.short	0
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.short	201
+	.short	1166
+	.short	1144
+	.short	1144
+	.short	106
 	.short	202
+	.short	1146
 	.short	203
 	.short	204
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	0
+	.short	0
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
 	.short	205
 	.short	206
 	.short	207
 	.short	208
-	.short	205
 	.short	209
 	.short	210
 	.short	211
 	.short	212
+	.short	209
 	.short	213
 	.short	214
-	.short	0
-	.short	0
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.short	215
 	.short	216
 	.short	217
 	.short	218
+	.short	0
+	.short	0
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
 	.short	219
 	.short	220
 	.short	221
 	.short	222
-	.short	219
-	.short	215
-	.short	223
-	.short	1241
 	.short	223
 	.short	224
-	.short	221
+	.short	225
+	.short	226
+	.short	223
+	.short	219
+	.short	227
+	.short	1245
+	.short	227
+	.short	228
+	.short	225
 	.short	0
 	.short	0
 	.short	0
@@ -1302,7 +1302,7 @@ instructionMap:
 	.short	0
 	.short	0
 	.type	instructionTiles, %object
-	.size	instructionTiles, 7200
+	.size	instructionTiles, 7328
 instructionTiles:
 	.short	0
 	.short	0
@@ -2148,10 +2148,42 @@ instructionTiles:
 	.short	13107
 	.short	13107
 	.short	13107
-	.short	17475
-	.short	13124
-	.short	17475
-	.short	13124
+	.short	17459
+	.short	13108
+	.short	17459
+	.short	13108
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	17203
+	.short	13107
+	.short	17203
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13108
+	.short	17203
+	.short	13108
+	.short	17203
 	.short	13379
 	.short	17203
 	.short	13379
@@ -2408,18 +2440,34 @@ instructionTiles:
 	.short	13107
 	.short	13107
 	.short	13107
+	.short	17459
+	.short	13107
+	.short	17459
+	.short	13107
+	.short	17459
+	.short	13107
+	.short	17459
+	.short	13107
+	.short	17459
+	.short	13107
+	.short	17459
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
 	.short	13124
 	.short	13379
 	.short	13124
 	.short	13379
-	.short	17476
-	.short	13380
-	.short	17476
 	.short	13124
+	.short	13379
 	.short	13124
-	.short	13107
-	.short	13124
-	.short	13107
+	.short	13379
+	.short	17459
+	.short	13108
+	.short	17459
+	.short	13108
 	.short	13107
 	.short	13107
 	.short	13107
@@ -2429,45 +2477,61 @@ instructionTiles:
 	.short	13379
 	.short	17459
 	.short	17475
-	.short	13124
-	.short	17475
-	.short	13124
-	.short	13379
-	.short	17459
-	.short	13379
-	.short	17459
-	.short	13107
-	.short	13107
-	.short	13107
-	.short	13107
-	.short	13379
-	.short	13107
-	.short	13379
-	.short	13107
-	.short	13379
-	.short	13107
-	.short	13379
-	.short	13107
-	.short	17475
-	.short	13380
-	.short	17475
-	.short	13380
-	.short	13107
-	.short	13107
-	.short	13107
-	.short	13107
-	.short	17459
-	.short	13107
-	.short	17459
-	.short	13124
-	.short	17459
-	.short	13124
-	.short	17459
-	.short	13107
-	.short	17459
 	.short	17476
-	.short	17459
+	.short	17475
 	.short	17476
+	.short	13379
+	.short	17459
+	.short	13379
+	.short	17459
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	17203
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	17459
+	.short	13107
+	.short	17203
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13108
+	.short	17203
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13108
+	.short	13107
+	.short	17476
+	.short	17476
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13108
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	13107
+	.short	17459
+	.short	13107
+	.short	13379
+	.short	13107
+	.short	13124
+	.short	13107
 	.short	13107
 	.short	13107
 	.short	13107

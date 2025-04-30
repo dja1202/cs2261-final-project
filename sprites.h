@@ -81,6 +81,7 @@ typedef struct {
   int grounded;
   int jumpCount;
   int maxJumps;
+  int cheatFlying;
   u8 oamIndex; 
 } SPRITE;
 

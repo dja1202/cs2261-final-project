@@ -30,15 +30,15 @@ SPRITE pet1;
 SPRITE pet2;
 SPRITE pet3;
 
-// player: initialize, update, draw (unique sprites #1 & animated)
+// player: initialize, update, draw
 void initializePlayer() {
     player.x = 8;
     player.y = 78;
     player.currentFrame = 0;
     player.direction = RIGHT;
     player.oamIndex = 0;
-    player.width = 28;
-    player.height = 28;
+    player.width = 32;
+    player.height = 32;
     player.isAnimating = 0;
     player.numFrames = 4;
     player.timeUntilNextFrame = 15;
@@ -46,18 +46,16 @@ void initializePlayer() {
     player.grounded = 0;
     player.jumpCount = 0;
     player.maxJumps = 2;
+    player.cheatFlying = 0;
     hOff = 0;
     vOff = 0;
 }
 void updatePlayer() {
-
-    oldButtons = buttons;
-    buttons = REG_BUTTONS;
-    
     player.isAnimating = 0;
+    player.cheatFlying = 0;
 
-    int leftX   = player.x;
-    int rightX  = player.x + player.width - 1;
+    int leftX   = player.x + 11;
+    int rightX  = player.x + player.width - 11;
     int topY    = player.y;
     int bottomY = player.y + player.height - 1;
     
@@ -77,7 +75,6 @@ void updatePlayer() {
 
     }
 
-    // double jump - “cheat” to make the game easier
     int onGround = !goThrough(leftX, bottomY + 1, level) || !goThrough(rightX, bottomY + 1, level);
 
     if (onGround) {
@@ -89,37 +86,65 @@ void updatePlayer() {
     }
 
     // Handle jumping
-    if (BUTTON_PRESSED(BUTTON_A) && player.jumpCount < player.maxJumps) {
+    if (BUTTON_PRESSED(BUTTON_A) && (player.jumpCount < player.maxJumps)) {
         player.dy = SHIFTUP(-4); // Adjust jump strength
         player.jumpCount++;
         player.grounded = 0;
     }
 
-    // Apply gravity
-    if (!player.grounded) {
+    // Check for flying cheat (hold L and R)
+    if (BUTTON_HELD(BUTTON_LSHOULDER) && BUTTON_HELD(BUTTON_RSHOULDER)) {
+        player.cheatFlying = 1;
+    } else {
+        player.cheatFlying = 0;
+    }
+
+    if (player.cheatFlying) {
+        if (BUTTON_HELD(BUTTON_UP)) {
+            player.y--;
+        }
+        if (BUTTON_HELD(BUTTON_DOWN)) {
+            player.y++;
+        }
+        player.grounded = 0; // flying is never grounded
+        player.dy = 0;        // disable normal gravity effect
+    } else {
+        // Normal gravity and jump behavior
         player.dy += GRAVITY;
         if (player.dy > TERMINALVELOCITY) {
             player.dy = TERMINALVELOCITY;
         }
 
-        int futureY = player.y + SHIFTDOWN(player.dy);
-        int futureBottomY = futureY + player.height - 1;
+        int steps = abs(SHIFTDOWN(player.dy));
+        int direction;
 
-        if (!goThrough(leftX, futureBottomY, level) || !goThrough(rightX, futureBottomY, level)) {
-            while (goThrough(leftX, player.y + 1 + player.height - 1, level) &&
-                goThrough(rightX, player.y + 1 + player.height - 1, level)) {
-                player.y++;
-            }
-            player.dy = 0;
-            player.grounded = 1;
-            player.jumpCount = 0; // Snap to ground and reset
+        if (player.dy > 0) {
+            direction = 1;
         } else {
-            player.y += SHIFTDOWN(player.dy);
+            direction = -1;
+        }
+
+        for (int i = 0; i < steps; i++) {
+            int nextY = player.y + direction;
+            int nextBottomY = nextY + player.height - 1;
+
+            if (!goThrough(leftX, nextBottomY, level) || !goThrough(rightX, nextBottomY, level)) {
+                player.dy = 0;
+
+                if (direction > 0) {
+                    player.grounded = 1;
+                    player.jumpCount = 0;
+                }
+
+                break;
+            } else {
+                player.y = nextY;
+            }
         }
     }
 
     // Animation frame update
-    if (player.isAnimating) {
+    if (player.isAnimating || player.cheatFlying) {
         --player.timeUntilNextFrame;
         if (player.timeUntilNextFrame <= 0) {
             player.currentFrame = (player.currentFrame + 1) % player.numFrames;
@@ -143,23 +168,29 @@ void updatePlayer() {
     if (hOff > MAPWIDTH - SCREENWIDTH) hOff = MAPWIDTH - SCREENWIDTH;
     if (vOff > MAPHEIGHT - SCREENHEIGHT) vOff = MAPHEIGHT - SCREENHEIGHT;
 
-    //Modify tile images/tilemaps at runtime
-    if (checkCollisionPetSprite(player, pet1)) {
-        int tileX = (player.x + player.width / 2 + hOff) / 8;
-        int tileY = (player.y + player.height / 2 + vOff) / 8;
-
-        SCREENBLOCK[30].tilemap[OFFSET(tileX, tileY, 32)] = 12; // <-- 12 is an example tile ID
-    }
 }
 
 void drawPlayer() {
     shadowOAM[player.oamIndex].attr0 = ATTR0_Y(player.y - vOff) | ATTR0_REGULAR | ATTR0_SQUARE;
     shadowOAM[player.oamIndex].attr1 = ATTR1_X(player.x - hOff) | ATTR1_MEDIUM;
 
-    if (lives == 1) {
-        shadowOAM[player.oamIndex].attr2 = ATTR2_TILEID(player.currentFrame * 4, player.direction * 4) | ATTR2_PALROW(1);
+    int tileRow;
+
+    if (player.cheatFlying) {
+        if (player.direction == LEFT) {
+            tileRow = 19;
+        } else {
+            tileRow = 15;
+        }
     } else {
-        shadowOAM[player.oamIndex].attr2 = ATTR2_TILEID(player.currentFrame * 4, player.direction * 4) | ATTR2_PALROW(0);
+        tileRow = player.direction * 4; // 0 if RIGHT, 4 if LEFT
+    }
+
+    if (lives == 1) {
+        shadowOAM[player.oamIndex].attr2 = ATTR2_TILEID(player.currentFrame * 4, tileRow) | ATTR2_PALROW(1);
+    } else {
+        shadowOAM[player.oamIndex].attr2 = ATTR2_TILEID(player.currentFrame * 4, tileRow) | ATTR2_PALROW(0);
+
         // Modify palette colors depending on lives
         if (lives == 3){
             SPRITE_PAL[1] = RGB(10, 5, 0); 
@@ -171,8 +202,25 @@ void drawPlayer() {
     }
 }
 
+// void drawPlayer() {
+//     shadowOAM[player.oamIndex].attr0 = ATTR0_Y(player.y - vOff) | ATTR0_REGULAR | ATTR0_SQUARE;
+//     shadowOAM[player.oamIndex].attr1 = ATTR1_X(player.x - hOff) | ATTR1_MEDIUM;
 
-// pets: initialize, update, draw (unique sprites # 2 & animated)
+//     if (lives == 1) {
+//         shadowOAM[player.oamIndex].attr2 = ATTR2_TILEID(player.currentFrame * 4, player.direction * 4) | ATTR2_PALROW(1);
+//     } else {
+//         shadowOAM[player.oamIndex].attr2 = ATTR2_TILEID(player.currentFrame * 4, player.direction * 4) | ATTR2_PALROW(0);
+//         // Modify palette colors depending on lives
+//         if (lives == 3){
+//             SPRITE_PAL[1] = RGB(10, 5, 0); 
+//             SPRITE_PAL[5] = RGB(14, 8, 6);
+//         } else if (lives == 2) {
+//             SPRITE_PAL[1] = RGB(14, 0, 0); 
+//             SPRITE_PAL[5] = RGB(17, 6, 4);
+//         }
+//     }
+// }
+
 void initializePet1() {
     pet1.x = 480;
     pet1.y = 96;
@@ -185,7 +233,6 @@ void initializePet1() {
     pet1.isAnimating = 1;
 }
 
-// unique sprites # 3 & animated
 void initializePet2() {
     pet2.x = 480;
     pet2.y = 96;
@@ -198,10 +245,9 @@ void initializePet2() {
     pet2.isAnimating = 1;
 }
 
-// unique sprites # 4 & animated
 void initializePet3() {
-    pet3.x = 480;
-    pet3.y = 96;
+    pet3.x = 487;
+    pet3.y = 44;
     pet3.width = 8;
     pet3.height = 8;
     pet3.oamIndex = 1;
@@ -293,7 +339,4 @@ int loseCondition() {
             initializePlayer();
         }
     }
-
-    // maybe include an enemmy like a bat or spikes.?
-    // (collision(enemy.x, enemy.y, enemy.width, enemy.height, player.x, player.y, player.width, player.height))
 }

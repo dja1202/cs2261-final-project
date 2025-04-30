@@ -88,6 +88,7 @@ typedef struct {
   int grounded;
   int jumpCount;
   int maxJumps;
+  int cheatFlying;
   u8 oamIndex;
 } SPRITE;
 # 4 "game.c" 2
@@ -300,7 +301,7 @@ void mgba_close(void);
 # 5 "game.c" 2
 # 1 "background1.h" 1
 # 22 "background1.h"
-extern const unsigned short background1Tiles[13664];
+extern const unsigned short background1Tiles[12336];
 
 
 extern const unsigned short background1Map[2048];
@@ -1014,8 +1015,8 @@ void initializePlayer() {
     player.currentFrame = 0;
     player.direction = RIGHT;
     player.oamIndex = 0;
-    player.width = 28;
-    player.height = 28;
+    player.width = 32;
+    player.height = 32;
     player.isAnimating = 0;
     player.numFrames = 4;
     player.timeUntilNextFrame = 15;
@@ -1023,18 +1024,16 @@ void initializePlayer() {
     player.grounded = 0;
     player.jumpCount = 0;
     player.maxJumps = 2;
+    player.cheatFlying = 0;
     hOff = 0;
     vOff = 0;
 }
 void updatePlayer() {
-
-    oldButtons = buttons;
-    buttons = (*(volatile unsigned short *)0x04000130);
-
     player.isAnimating = 0;
+    player.cheatFlying = 0;
 
-    int leftX = player.x;
-    int rightX = player.x + player.width - 1;
+    int leftX = player.x + 11;
+    int rightX = player.x + player.width - 11;
     int topY = player.y;
     int bottomY = player.y + player.height - 1;
 
@@ -1054,7 +1053,6 @@ void updatePlayer() {
 
     }
 
-
     int onGround = !goThrough(leftX, bottomY + 1, level) || !goThrough(rightX, bottomY + 1, level);
 
     if (onGround) {
@@ -1066,37 +1064,65 @@ void updatePlayer() {
     }
 
 
-    if ((!(~(oldButtons) & ((1<<0))) && (~(buttons) & ((1<<0)))) && player.jumpCount < player.maxJumps) {
+    if ((!(~(oldButtons) & ((1<<0))) && (~(buttons) & ((1<<0)))) && (player.jumpCount < player.maxJumps)) {
         player.dy = ((-4) << 8);
         player.jumpCount++;
         player.grounded = 0;
     }
 
 
-    if (!player.grounded) {
+    if ((~(buttons) & ((1<<9))) && (~(buttons) & ((1<<8)))) {
+        player.cheatFlying = 1;
+    } else {
+        player.cheatFlying = 0;
+    }
+
+    if (player.cheatFlying) {
+        if ((~(buttons) & ((1<<6)))) {
+            player.y--;
+        }
+        if ((~(buttons) & ((1<<7)))) {
+            player.y++;
+        }
+        player.grounded = 0;
+        player.dy = 0;
+    } else {
+
         player.dy += 100;
         if (player.dy > ((10) << 8)) {
             player.dy = ((10) << 8);
         }
 
-        int futureY = player.y + ((player.dy) >> 8);
-        int futureBottomY = futureY + player.height - 1;
+        int steps = abs(((player.dy) >> 8));
+        int direction;
 
-        if (!goThrough(leftX, futureBottomY, level) || !goThrough(rightX, futureBottomY, level)) {
-            while (goThrough(leftX, player.y + 1 + player.height - 1, level) &&
-                goThrough(rightX, player.y + 1 + player.height - 1, level)) {
-                player.y++;
-            }
-            player.dy = 0;
-            player.grounded = 1;
-            player.jumpCount = 0;
+        if (player.dy > 0) {
+            direction = 1;
         } else {
-            player.y += ((player.dy) >> 8);
+            direction = -1;
+        }
+
+        for (int i = 0; i < steps; i++) {
+            int nextY = player.y + direction;
+            int nextBottomY = nextY + player.height - 1;
+
+            if (!goThrough(leftX, nextBottomY, level) || !goThrough(rightX, nextBottomY, level)) {
+                player.dy = 0;
+
+                if (direction > 0) {
+                    player.grounded = 1;
+                    player.jumpCount = 0;
+                }
+
+                break;
+            } else {
+                player.y = nextY;
+            }
         }
     }
 
 
-    if (player.isAnimating) {
+    if (player.isAnimating || player.cheatFlying) {
         --player.timeUntilNextFrame;
         if (player.timeUntilNextFrame <= 0) {
             player.currentFrame = (player.currentFrame + 1) % player.numFrames;
@@ -1120,23 +1146,29 @@ void updatePlayer() {
     if (hOff > 512 - 240) hOff = 512 - 240;
     if (vOff > 160 - 160) vOff = 160 - 160;
 
-
-    if (checkCollisionPetSprite(player, pet1)) {
-        int tileX = (player.x + player.width / 2 + hOff) / 8;
-        int tileY = (player.y + player.height / 2 + vOff) / 8;
-
-        ((SB*) 0x6000000)[30].tilemap[((tileY) * (32) + (tileX))] = 12;
-    }
 }
 
 void drawPlayer() {
     shadowOAM[player.oamIndex].attr0 = ((player.y - vOff) & 0xFF) | (0<<8) | (0<<14);
     shadowOAM[player.oamIndex].attr1 = ((player.x - hOff) & 0x1FF) | (2<<14);
 
-    if (lives == 1) {
-        shadowOAM[player.oamIndex].attr2 = ((((player.direction * 4) * (32) + (player.currentFrame * 4))) & 0x3FF) | (((1) & 0xF) <<12);
+    int tileRow;
+
+    if (player.cheatFlying) {
+        if (player.direction == LEFT) {
+            tileRow = 19;
+        } else {
+            tileRow = 15;
+        }
     } else {
-        shadowOAM[player.oamIndex].attr2 = ((((player.direction * 4) * (32) + (player.currentFrame * 4))) & 0x3FF) | (((0) & 0xF) <<12);
+        tileRow = player.direction * 4;
+    }
+
+    if (lives == 1) {
+        shadowOAM[player.oamIndex].attr2 = ((((tileRow) * (32) + (player.currentFrame * 4))) & 0x3FF) | (((1) & 0xF) <<12);
+    } else {
+        shadowOAM[player.oamIndex].attr2 = ((((tileRow) * (32) + (player.currentFrame * 4))) & 0x3FF) | (((0) & 0xF) <<12);
+
 
         if (lives == 3){
             ((u16 *)0x5000200)[1] = (((10) & 31) | ((5) & 31) << 5 | ((0) & 31) << 10);
@@ -1147,9 +1179,7 @@ void drawPlayer() {
         }
     }
 }
-
-
-
+# 224 "game.c"
 void initializePet1() {
     pet1.x = 480;
     pet1.y = 96;
@@ -1161,7 +1191,6 @@ void initializePet1() {
     pet1.timeUntilNextFrame = 15;
     pet1.isAnimating = 1;
 }
-
 
 void initializePet2() {
     pet2.x = 480;
@@ -1175,10 +1204,9 @@ void initializePet2() {
     pet2.isAnimating = 1;
 }
 
-
 void initializePet3() {
-    pet3.x = 480;
-    pet3.y = 96;
+    pet3.x = 487;
+    pet3.y = 44;
     pet3.width = 8;
     pet3.height = 8;
     pet3.oamIndex = 1;
@@ -1270,7 +1298,4 @@ int loseCondition() {
             initializePlayer();
         }
     }
-
-
-
 }

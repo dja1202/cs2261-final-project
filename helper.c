@@ -75,23 +75,6 @@ void updateGame1() {
     updatePet1();
     winCondition();
     loseCondition();
-    // // Lose condition for enemy and player collision
-    // if (checkPlayerEnemyCollision()) {
-    //     // Decrement lives
-    //     lives--;
-    //     // If lives reaches 0, then go to losing game state
-    //     if (lives <= 0) {
-    //         goToLose();
-    //     } else {
-    //         // If lives is not 0, then reset the game, but stay at level 1
-    //         // Player goes back to original spot 
-    //         initializePlayer();
-    //         // ONLY reset ACTIVE enemies
-    //         initializeEnemies(0);
-    //     }
-    // }
-
-    // If player hits all enemies and reaches exit, go to next level
 }
 
 void drawGame1() {
@@ -107,20 +90,6 @@ void updateGame2() {
     updatePet2();
     winCondition();
     loseCondition();
-    // // Check collision between player and active enemy
-    // if (checkPlayerEnemyCollision()) {
-    //     // Decrease lives
-    //     lives--;
-    //     // If player runs out of lives, go to lose game state
-    //     if (lives <= 0) {
-    //         goToLose();
-    //     } else {
-    //         // Else continue to reset like game one
-    //         initializePlayer();  // Respawn player
-    //         initializeEnemies(0);
-    //         initializeEnemies2(0);
-    //     }
-    // }
 }
 
 // Duplicate function in game one
@@ -137,21 +106,6 @@ void updateGame3() {
     updatePet3();
     winCondition();
     loseCondition();
-    // // Lose condition for enemy and player collision
-    // if (checkPlayerEnemyCollision()) {
-    //     // Decrement lives
-    //     lives--;
-    //     // If lives reaches 0, then go to losing game state
-    //     if (lives <= 0) {
-    //         goToLose();
-    //     } else {
-    //         // If lives is not 0, then reset the game, but stay at level 1
-    //         // Player goes back to original spot 
-    //         initializePlayer();
-    //         // ONLY reset ACTIVE enemies
-    //         initializeEnemies(0);
-    //     }
-    // }
 }
 
 void drawGame3() {
