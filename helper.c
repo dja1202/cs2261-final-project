@@ -74,7 +74,6 @@ void updateGame1() {
     updatePlayer();
     updatePet1();
     winCondition();
-    loseCondition();
 }
 
 void drawGame1() {
@@ -89,7 +88,6 @@ void updateGame2() {
     updatePlayer();
     updatePet2();
     winCondition();
-    loseCondition();
 }
 
 // Duplicate function in game one
@@ -105,7 +103,6 @@ void updateGame3() {
     updatePlayer();
     updatePet3();
     winCondition();
-    loseCondition();
 }
 
 void drawGame3() {
