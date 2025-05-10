@@ -26,14 +26,14 @@ Rescue **all the pets** to complete your mission!
 ---
 
 ## ❌ Lose Condition  
-You have **3 lives**.  
+You have **3 lives** throughout the whole game.  
 - Touching **water** costs 1 life  
 - Lose all 3 lives = game over
 
 ---
 
 ## 🧪 Cheat Code: Jetpack Fly Mode  
-Hold **L + R** buttons to activate continuous **fly mode**.  
+Holding down **L + R** activates **continuous fly mode**, allowing you to also pass freely through the map!
 Use the **D-pad** to move while flying.
 
 ---

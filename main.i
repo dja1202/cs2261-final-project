@@ -88,6 +88,7 @@ typedef struct {
   int grounded;
   int jumpCount;
   int maxJumps;
+  int cheatFlying;
   u8 oamIndex;
 } SPRITE;
 # 4 "main.c" 2
@@ -338,7 +339,7 @@ extern const unsigned short spritesheetPal[256];
 # 8 "main.c" 2
 # 1 "map1.h" 1
 # 22 "map1.h"
-extern const unsigned short map1Tiles[144];
+extern const unsigned short map1Tiles[112];
 
 
 extern const unsigned short map1Map[2048];
@@ -354,7 +355,7 @@ extern const unsigned short map2Tiles[112];
 extern const unsigned short map2Map[2048];
 
 
-extern const unsigned short map2Pal[256];
+extern const unsigned short map2Pal[16];
 # 10 "main.c" 2
 # 1 "map3.h" 1
 # 22 "map3.h"
@@ -364,11 +365,11 @@ extern const unsigned short map3Tiles[176];
 extern const unsigned short map3Map[2048];
 
 
-extern const unsigned short map3Pal[256];
+extern const unsigned short map3Pal[16];
 # 11 "main.c" 2
 # 1 "background1.h" 1
 # 22 "background1.h"
-extern const unsigned short background1Tiles[12336];
+extern const unsigned short background1Tiles[11888];
 
 
 extern const unsigned short background1Map[2048];
@@ -384,7 +385,7 @@ extern const unsigned short background2Tiles[12416];
 extern const unsigned short background2Map[2048];
 
 
-extern const unsigned short background2Pal[256];
+extern const unsigned short background2Pal[16];
 # 13 "main.c" 2
 # 1 "background3.h" 1
 # 22 "background3.h"
@@ -399,7 +400,7 @@ extern const unsigned short background3Pal[256];
 
 # 1 "start.h" 1
 # 22 "start.h"
-extern const unsigned short startTiles[432];
+extern const unsigned short startTiles[2416];
 
 
 extern const unsigned short startMap[1024];
@@ -409,17 +410,17 @@ extern const unsigned short startPal[256];
 # 16 "main.c" 2
 # 1 "instruction.h" 1
 # 22 "instruction.h"
-extern const unsigned short instructionTiles[3600];
+extern const unsigned short instructionTiles[3664];
 
 
 extern const unsigned short instructionMap[1024];
 
 
-extern const unsigned short instructionPal[256];
+extern const unsigned short instructionPal[16];
 # 17 "main.c" 2
 # 1 "pause.h" 1
 # 22 "pause.h"
-extern const unsigned short pauseTiles[2240];
+extern const unsigned short pauseTiles[2576];
 
 
 extern const unsigned short pauseMap[1024];
@@ -429,23 +430,23 @@ extern const unsigned short pausePal[256];
 # 18 "main.c" 2
 # 1 "lose.h" 1
 # 22 "lose.h"
-extern const unsigned short loseTiles[1360];
+extern const unsigned short loseTiles[1152];
 
 
 extern const unsigned short loseMap[1024];
 
 
-extern const unsigned short losePal[256];
+extern const unsigned short losePal[16];
 # 19 "main.c" 2
 # 1 "win.h" 1
 # 22 "win.h"
-extern const unsigned short winTiles[1296];
+extern const unsigned short winTiles[3248];
 
 
 extern const unsigned short winMap[1024];
 
 
-extern const unsigned short winPal[256];
+extern const unsigned short winPal[16];
 # 20 "main.c" 2
 # 1 "digitalSound.h" 1
 
@@ -614,12 +615,15 @@ void goToStart() {
 
 void start() {
     (*(volatile unsigned short *)0x4000000) = (1 << (8 + (1 % 4)));
+    (*(volatile unsigned short*) 0x04000014) = 0;
 
+    waitForVBlank();
     DMANow(3, startPal, ((unsigned short *)0x5000000), 256);
-    DMANow(3, startTiles, &((CB*) 0x6000000)[0], 864 / 2);
+    DMANow(3, startTiles, &((CB*) 0x6000000)[0], 4832 / 2);
     DMANow(3, startMap, &((SB*) 0x6000000)[28], 2048 / 2);
 
     hideSprites();
+    DMANow(3, shadowOAM, ((OBJ_ATTR*)(0x7000000)), 128 * 4);
 
     if ((!(~(oldButtons) & ((1<<3))) && (~(buttons) & ((1<<3))))) {
         goToInstructions();
@@ -633,13 +637,17 @@ void instructions() {
     (*(volatile unsigned short *)0x4000000) = (1 << (8 + (1 % 4)));
     (*(volatile unsigned short*) 0x04000014) = 0;
 
+    waitForVBlank();
     DMANow(3, instructionPal, ((unsigned short *)0x5000000), 256);
-    DMANow(3, instructionTiles, &((CB*) 0x6000000)[0], 7200 / 2);
+    DMANow(3, instructionTiles, &((CB*) 0x6000000)[0], 7328 / 2);
     DMANow(3, instructionMap, &((SB*) 0x6000000)[28], 2048 / 2);
 
     hideSprites();
+    DMANow(3, shadowOAM, ((OBJ_ATTR*)(0x7000000)), 128 * 4);
 
     if ((!(~(oldButtons) & ((1<<3))) && (~(buttons) & ((1<<3))))) {
+        hOff = savedHOff;
+        vOff = savedVOff;
         if (level == 1){
             goToGame1();
         } else if (level == 2) {
@@ -647,6 +655,7 @@ void instructions() {
         } else {
             goToGame3();
         }
+        paused = 0;
     }
 }
 
@@ -655,12 +664,13 @@ void goToGame1() {
 
     (*(volatile unsigned short *)0x4000000) = (1 << (8 + (0 % 4))) | (1 << (8 + (1 % 4))) | (1 << 12);
 
+    waitForVBlank();
     DMANow(3, background1Pal, ((unsigned short *)0x5000000), 256);
-    DMANow(3, background1Tiles, &((CB*) 0x6000000)[0], 24672 / 2);
+    DMANow(3, background1Tiles, &((CB*) 0x6000000)[0], 23776 / 2);
     DMANow(3, background1Map, &((SB*) 0x6000000)[28], 4096 / 2);
 
 
-    DMANow(3, map1Tiles, &((CB*) 0x6000000)[1], 288 / 2);
+    DMANow(3, map1Tiles, &((CB*) 0x6000000)[1], 224 / 2);
     DMANow(3, map1Map, &((SB*) 0x6000000)[30], 4096 / 2);
 
     if (!paused) {
@@ -695,6 +705,7 @@ void game1() {
 void goToGame2() {
     (*(volatile unsigned short *)0x4000000) = (1 << (8 + (0 % 4))) | (1 << (8 + (1 % 4))) | (1 << 12);
 
+    waitForVBlank();
     DMANow(3, background2Pal, ((unsigned short *)0x5000000), 256);
     DMANow(3, background2Tiles, &((CB*) 0x6000000)[0], 24832 / 2);
     DMANow(3, background2Map, &((SB*) 0x6000000)[28], 4096 / 2);
@@ -735,6 +746,7 @@ void game2() {
 void goToGame3() {
     (*(volatile unsigned short *)0x4000000) = (1 << (8 + (0 % 4))) | (1 << (8 + (1 % 4))) | (1 << 12);
 
+    waitForVBlank();
     DMANow(3, background3Pal, ((unsigned short *)0x5000000), 256);
     DMANow(3, background3Tiles, &((CB*) 0x6000000)[0], 24928 / 2);
     DMANow(3, background3Map, &((SB*) 0x6000000)[28], 4096 / 2);
@@ -787,13 +799,13 @@ void pause() {
     (*(volatile unsigned short *)0x4000000) = (1 << (8 + (1 % 4)));
     (*(volatile unsigned short*) 0x04000014) = 0;
 
+    waitForVBlank();
     DMANow(3, pausePal, ((unsigned short *)0x5000000), 256);
-    DMANow(3, pauseTiles, &((CB*) 0x6000000)[0], 4480 / 2);
+    DMANow(3, pauseTiles, &((CB*) 0x6000000)[0], 5152 / 2);
     DMANow(3, pauseMap, &((SB*) 0x6000000)[28], 2048 / 2);
 
 
     hideSprites();
-    waitForVBlank();
     DMANow(3, shadowOAM, ((OBJ_ATTR*)(0x7000000)), 128 * 4);
 
     if ((!(~(oldButtons) & ((1<<3))) && (~(buttons) & ((1<<3))))) {
@@ -825,7 +837,7 @@ void lose() {
 
     waitForVBlank();
     DMANow(3, losePal, ((unsigned short *)0x5000000), 256);
-    DMANow(3, loseTiles, &((CB*) 0x6000000)[0], 2720 / 2);
+    DMANow(3, loseTiles, &((CB*) 0x6000000)[0], 2304 / 2);
     DMANow(3, loseMap, &((SB*) 0x6000000)[28], 2048 / 2);
 
     hideSprites();
@@ -848,12 +860,16 @@ void win() {
 
     waitForVBlank();
     DMANow(3, winPal, ((unsigned short *)0x5000000), 256);
-    DMANow(3, winTiles, &((CB*) 0x6000000)[0], 2592 / 2);
+    DMANow(3, winTiles, &((CB*) 0x6000000)[0], 6496 / 2);
     DMANow(3, winMap, &((SB*) 0x6000000)[28], 2048 / 2);
 
     hideSprites();
     DMANow(3, shadowOAM, ((OBJ_ATTR*)(0x7000000)), 128 * 4);
+    if ((~(buttons) & ((1<<0)))) {
 
+        ((SB*) 0x6000000)[28].tilemap[((8) * (32) + (11))] = 1;
+        ((SB*) 0x6000000)[28].tilemap[((8) * (32) + (18))] = 1;
+    }
     if ((!(~(oldButtons) & ((1<<2))) && (~(buttons) & ((1<<2))))) {
         goToStart();
     }

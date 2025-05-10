@@ -106,8 +106,14 @@ void updatePlayer() {
         if (BUTTON_HELD(BUTTON_DOWN)) {
             player.y++;
         }
+        if (BUTTON_HELD(BUTTON_LEFT)) {
+            player.x--;
+        }
+        if (BUTTON_HELD(BUTTON_RIGHT)) {
+            player.x++;
+        }
         player.grounded = 0; // flying is never grounded
-        player.dy = 0;        // disable normal gravity effect
+        player.dy = 0;
     } else {
         // Normal gravity and jump behavior
         player.dy += GRAVITY;
@@ -139,6 +145,7 @@ void updatePlayer() {
             break;
         } else {
             player.y = nextY;
+            //check if the player touches the water
             if (checkCollisionLose(player.x, player.y)) {
                 lives--;
                 if (lives <= 0) {
@@ -200,7 +207,6 @@ void drawPlayer() {
         shadowOAM[player.oamIndex].attr2 = ATTR2_TILEID(player.currentFrame * 4, tileRow) | ATTR2_PALROW(1);
     } else {
         shadowOAM[player.oamIndex].attr2 = ATTR2_TILEID(player.currentFrame * 4, tileRow) | ATTR2_PALROW(0);
-
         // Modify palette colors depending on lives
         if (lives == 3){
             SPRITE_PAL[1] = RGB(10, 5, 0); 

@@ -201,9 +201,6 @@ updateGame1:
 	ldr	r3, .L36+8
 	mov	lr, pc
 	bx	r3
-	ldr	r3, .L36+12
-	mov	lr, pc
-	bx	r3
 	pop	{r4, lr}
 	bx	lr
 .L37:
@@ -212,7 +209,6 @@ updateGame1:
 	.word	updatePlayer
 	.word	updatePet1
 	.word	winCondition
-	.word	loseCondition
 	.size	updateGame1, .-updateGame1
 	.align	2
 	.global	drawGame1
@@ -268,9 +264,6 @@ updateGame2:
 	ldr	r3, .L44+8
 	mov	lr, pc
 	bx	r3
-	ldr	r3, .L44+12
-	mov	lr, pc
-	bx	r3
 	pop	{r4, lr}
 	bx	lr
 .L45:
@@ -279,7 +272,6 @@ updateGame2:
 	.word	updatePlayer
 	.word	updatePet2
 	.word	winCondition
-	.word	loseCondition
 	.size	updateGame2, .-updateGame2
 	.align	2
 	.global	drawGame2
@@ -331,9 +323,6 @@ updateGame3:
 	ldr	r3, .L52+8
 	mov	lr, pc
 	bx	r3
-	ldr	r3, .L52+12
-	mov	lr, pc
-	bx	r3
 	pop	{r4, lr}
 	bx	lr
 .L53:
@@ -342,7 +331,6 @@ updateGame3:
 	.word	updatePlayer
 	.word	updatePet3
 	.word	winCondition
-	.word	loseCondition
 	.size	updateGame3, .-updateGame3
 	.align	2
 	.global	drawGame3

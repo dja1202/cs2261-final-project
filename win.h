@@ -4,12 +4,12 @@
 //======================================================================
 //
 //	win, 256x256@4, 
-//	+ palette 256 entries, not compressed
-//	+ 81 tiles (t|f|p reduced) not compressed
+//	+ palette 16 entries, not compressed
+//	+ 203 tiles (t|f|p reduced) not compressed
 //	+ regular map (in SBBs), not compressed, 32x32 
-//	Total size: 512 + 2592 + 2048 = 5152
+//	Total size: 32 + 6496 + 2048 = 8576
 //
-//	Time-stamp: 2025-03-27, 14:16:38
+//	Time-stamp: 2025-04-30, 08:43:59
 //	Exported by Cearn's GBA Image Transmogrifier, v0.8.3
 //	( http://www.coranac.com/projects/#grit )
 //
@@ -18,14 +18,14 @@
 #ifndef GRIT_WIN_H
 #define GRIT_WIN_H
 
-#define winTilesLen 2592
-extern const unsigned short winTiles[1296];
+#define winTilesLen 6496
+extern const unsigned short winTiles[3248];
 
 #define winMapLen 2048
 extern const unsigned short winMap[1024];
 
-#define winPalLen 512
-extern const unsigned short winPal[256];
+#define winPalLen 32
+extern const unsigned short winPal[16];
 
 #endif // GRIT_WIN_H
 

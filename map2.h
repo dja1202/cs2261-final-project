@@ -4,12 +4,12 @@
 //======================================================================
 //
 //	map2, 512x256@4, 
-//	+ palette 256 entries, not compressed
+//	+ palette 16 entries, not compressed
 //	+ 7 tiles (t|f|p reduced) not compressed
 //	+ regular map (in SBBs), not compressed, 64x32 
-//	Total size: 512 + 224 + 4096 = 4832
+//	Total size: 32 + 224 + 4096 = 4352
 //
-//	Time-stamp: 2025-04-19, 22:48:31
+//	Time-stamp: 2025-04-30, 04:22:05
 //	Exported by Cearn's GBA Image Transmogrifier, v0.8.3
 //	( http://www.coranac.com/projects/#grit )
 //
@@ -24,8 +24,8 @@ extern const unsigned short map2Tiles[112];
 #define map2MapLen 4096
 extern const unsigned short map2Map[2048];
 
-#define map2PalLen 512
-extern const unsigned short map2Pal[256];
+#define map2PalLen 32
+extern const unsigned short map2Pal[16];
 
 #endif // GRIT_MAP2_H
 

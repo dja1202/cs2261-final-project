@@ -346,7 +346,7 @@ extern const unsigned short collision1Pal[256];
 extern const unsigned short collision2Bitmap[65536];
 
 
-extern const unsigned short collision2Pal[16];
+extern const unsigned short collision2Pal[4];
 # 10 "helper.c" 2
 # 1 "collision3.h" 1
 # 21 "collision3.h"
@@ -357,7 +357,7 @@ extern const unsigned short collision3Pal[256];
 # 11 "helper.c" 2
 # 1 "map1.h" 1
 # 22 "map1.h"
-extern const unsigned short map1Tiles[144];
+extern const unsigned short map1Tiles[112];
 
 
 extern const unsigned short map1Map[2048];
@@ -430,7 +430,6 @@ void updateGame1() {
     updatePlayer();
     updatePet1();
     winCondition();
-    loseCondition();
 }
 
 void drawGame1() {
@@ -445,7 +444,6 @@ void updateGame2() {
     updatePlayer();
     updatePet2();
     winCondition();
-    loseCondition();
 }
 
 
@@ -461,7 +459,6 @@ void updateGame3() {
     updatePlayer();
     updatePet3();
     winCondition();
-    loseCondition();
 }
 
 void drawGame3() {

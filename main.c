@@ -128,12 +128,15 @@ void goToStart() {
 
 void start() {
     REG_DISPCTL = BG_ENABLE(1);
+    REG_BG1HOFF = 0;
 
+    waitForVBlank();
     DMANow(3, startPal, BG_PALETTE, 256);
     DMANow(3, startTiles, &CHARBLOCK[0], startTilesLen / 2);
     DMANow(3, startMap, &SCREENBLOCK[28], startMapLen / 2);
 
     hideSprites();
+    DMANow(3, shadowOAM, OAM, 128 * 4);
 
     if (BUTTON_PRESSED(BUTTON_START)) {
         goToInstructions();
@@ -147,13 +150,17 @@ void instructions() {
     REG_DISPCTL = BG_ENABLE(1);
     REG_BG1HOFF = 0;
 
+    waitForVBlank();
     DMANow(3, instructionPal, BG_PALETTE, 256);
     DMANow(3, instructionTiles, &CHARBLOCK[0], instructionTilesLen / 2);
     DMANow(3, instructionMap, &SCREENBLOCK[28], instructionMapLen / 2);
 
     hideSprites();
+    DMANow(3, shadowOAM, OAM, 128 * 4);
 
     if (BUTTON_PRESSED(BUTTON_START)) {
+        hOff = savedHOff;
+        vOff = savedVOff;
         if (level == 1){
             goToGame1();
         } else if (level == 2)  {
@@ -161,6 +168,7 @@ void instructions() {
         } else {
             goToGame3();
         }
+        paused = 0;
     }
 }
 
@@ -169,6 +177,7 @@ void goToGame1() {
 
     REG_DISPCTL = BG_ENABLE(0) | BG_ENABLE(1) | SPRITE_ENABLE;
 
+    waitForVBlank();
     DMANow(3, background1Pal, BG_PALETTE, 256);
     DMANow(3, background1Tiles, &CHARBLOCK[0], background1TilesLen / 2);
     DMANow(3, background1Map, &SCREENBLOCK[28], background1MapLen / 2);
@@ -176,7 +185,7 @@ void goToGame1() {
     //DMANow(3, map1Pal, BG_PALETTE, 256);
     DMANow(3, map1Tiles, &CHARBLOCK[1], map1TilesLen / 2);
     DMANow(3, map1Map, &SCREENBLOCK[30], map1MapLen / 2);
-
+    
     if (!paused) {
         level = 1;
         initializePlayer();
@@ -209,6 +218,7 @@ void game1() {
 void goToGame2() {
     REG_DISPCTL = BG_ENABLE(0) | BG_ENABLE(1) | SPRITE_ENABLE;
 
+    waitForVBlank();
     DMANow(3, background2Pal, BG_PALETTE, 256);
     DMANow(3, background2Tiles, &CHARBLOCK[0], background2TilesLen / 2);
     DMANow(3, background2Map, &SCREENBLOCK[28], background2MapLen / 2);
@@ -249,6 +259,7 @@ void game2() {
 void goToGame3() {
     REG_DISPCTL = BG_ENABLE(0) | BG_ENABLE(1) | SPRITE_ENABLE;
 
+    waitForVBlank();
     DMANow(3, background3Pal, BG_PALETTE, 256);
     DMANow(3, background3Tiles, &CHARBLOCK[0], background3TilesLen / 2);
     DMANow(3, background3Map, &SCREENBLOCK[28], background3MapLen / 2);
@@ -301,13 +312,13 @@ void pause() {
     REG_DISPCTL = BG_ENABLE(1);
     REG_BG1HOFF = 0;
 
+    waitForVBlank();
     DMANow(3, pausePal, BG_PALETTE, 256);
     DMANow(3, pauseTiles, &CHARBLOCK[0], pauseTilesLen / 2);
     DMANow(3, pauseMap, &SCREENBLOCK[28], pauseMapLen / 2);
     
 
     hideSprites();
-    waitForVBlank();
     DMANow(3, shadowOAM, OAM, 128 * 4);
 
     if (BUTTON_PRESSED(BUTTON_START)) {
@@ -367,7 +378,11 @@ void win() {
 
     hideSprites();
     DMANow(3, shadowOAM, OAM, 128 * 4);
-    
+    if (BUTTON_HELD(BUTTON_A)) {
+        // Change tile at (11,8) and (18,8) in SCREENBLOCK[28] to tile index 1
+        SCREENBLOCK[28].tilemap[OFFSET(11, 8, 32)] = 1;
+        SCREENBLOCK[28].tilemap[OFFSET(18, 8, 32)] = 1;
+    }
     if (BUTTON_PRESSED(BUTTON_SELECT)) {
         goToStart();
     }

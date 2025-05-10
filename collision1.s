@@ -33092,38 +33092,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -33168,22 +33168,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -33348,38 +33348,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -33424,22 +33424,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -33604,38 +33604,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -33680,22 +33680,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -33860,38 +33860,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -33936,22 +33936,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -34116,38 +34116,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -34192,22 +34192,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -34372,38 +34372,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -34448,22 +34448,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -34628,38 +34628,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -34704,22 +34704,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -34884,38 +34884,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -34960,22 +34960,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -35140,38 +35140,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -35216,22 +35216,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -35396,38 +35396,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -35472,22 +35472,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -35652,38 +35652,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -35728,22 +35728,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -35908,38 +35908,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -35984,22 +35984,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -36164,38 +36164,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -36240,22 +36240,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -36420,38 +36420,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -36496,22 +36496,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -36676,38 +36676,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -36752,22 +36752,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -36932,38 +36932,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -37008,22 +37008,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -37188,38 +37188,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -37264,22 +37264,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -37444,38 +37444,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -37520,22 +37520,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -37700,38 +37700,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -37776,22 +37776,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -37956,38 +37956,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -38032,22 +38032,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -38212,38 +38212,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -38288,22 +38288,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -38468,38 +38468,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -38544,22 +38544,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -38724,38 +38724,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -38800,22 +38800,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -38980,38 +38980,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -39056,22 +39056,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -39236,38 +39236,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -39312,22 +39312,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -39492,38 +39492,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -39568,22 +39568,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -39748,38 +39748,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -39824,22 +39824,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -40004,38 +40004,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -40080,22 +40080,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -40260,38 +40260,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -40336,22 +40336,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -40516,38 +40516,38 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -40592,22 +40592,22 @@ collision1Bitmap:
 	.short	0
 	.short	0
 	.short	0
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.short	257
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
+	.short	514
 	.short	0
 	.short	0
 	.short	0
@@ -40864,7 +40864,7 @@ collision1Bitmap:
 	.short	514
 	.short	514
 	.short	514
-	.short	2
+	.short	0
 	.short	0
 	.short	0
 	.short	0

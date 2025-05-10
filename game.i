@@ -301,7 +301,7 @@ void mgba_close(void);
 # 5 "game.c" 2
 # 1 "background1.h" 1
 # 22 "background1.h"
-extern const unsigned short background1Tiles[12336];
+extern const unsigned short background1Tiles[11888];
 
 
 extern const unsigned short background1Map[2048];
@@ -1084,6 +1084,12 @@ void updatePlayer() {
         if ((~(buttons) & ((1<<7)))) {
             player.y++;
         }
+        if ((~(buttons) & ((1<<5)))) {
+            player.x--;
+        }
+        if ((~(buttons) & ((1<<4)))) {
+            player.x++;
+        }
         player.grounded = 0;
         player.dy = 0;
     } else {
@@ -1102,23 +1108,34 @@ void updatePlayer() {
             direction = -1;
         }
 
-        for (int i = 0; i < steps; i++) {
-            int nextY = player.y + direction;
-            int nextBottomY = nextY + player.height - 1;
+    for (int i = 0; i < steps; i++) {
+        int nextY = player.y + direction;
+        int nextBottomY = nextY + player.height - 1;
 
-            if (!goThrough(leftX, nextBottomY, level) || !goThrough(rightX, nextBottomY, level)) {
-                player.dy = 0;
+        if (!goThrough(leftX, nextBottomY, level) || !goThrough(rightX, nextBottomY, level)) {
+            player.dy = 0;
 
-                if (direction > 0) {
-                    player.grounded = 1;
-                    player.jumpCount = 0;
+            if (direction > 0) {
+                player.grounded = 1;
+                player.jumpCount = 0;
+            }
+
+            break;
+        } else {
+            player.y = nextY;
+
+            if (checkCollisionLose(player.x, player.y)) {
+                lives--;
+                if (lives <= 0) {
+                    goToLose();
+                } else {
+                    initializePlayer();
                 }
-
-                break;
-            } else {
-                player.y = nextY;
+                return;
             }
         }
+    }
+
     }
 
 
@@ -1169,7 +1186,6 @@ void drawPlayer() {
     } else {
         shadowOAM[player.oamIndex].attr2 = ((((tileRow) * (32) + (player.currentFrame * 4))) & 0x3FF) | (((0) & 0xF) <<12);
 
-
         if (lives == 3){
             ((u16 *)0x5000200)[1] = (((10) & 31) | ((5) & 31) << 5 | ((0) & 31) << 10);
             ((u16 *)0x5000200)[5] = (((14) & 31) | ((8) & 31) << 5 | ((6) & 31) << 10);
@@ -1179,7 +1195,7 @@ void drawPlayer() {
         }
     }
 }
-# 224 "game.c"
+
 void initializePet1() {
     pet1.x = 480;
     pet1.y = 96;
@@ -1286,16 +1302,4 @@ int winCondition() {
         return 1;
     }
     return 0;
-}
-
-
-int loseCondition() {
-    if (checkCollisionLose(player.x, player.y)) {
-        lives--;
-        if (lives <= 0) {
-            goToLose();
-        } else {
-            initializePlayer();
-        }
-    }
 }
